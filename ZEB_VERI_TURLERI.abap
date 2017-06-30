@@ -49,3 +49,18 @@ write : / 'gv_karakter      :', GV_KARAKTER1,
         / 'gv_numerik_karak :', GV_NUMERIK_KARAKTER,
         / 'gv_bit_dizisi    :', GV_BIT_DIZI,
         / 'gv_ondalikli     :', GV_ONDALIKLI.
+
+types : gty_faiz    type p LENGTH 4 DECIMALS 3,
+        gty_posta   type n LENGTH 5.
+
+data : gv_posta type GTY_POSTA VALUE '12345',
+       gv_faiz  TYPE GTY_FAIZ VALUE '1.457'.
+
+skip 1.
+
+WRITE : / 'Özel tip tanýmlama' color COL_KEY.
+
+uline.
+
+write : / 'gv_posta   :', GV_POSTA,
+        / 'gv_faiz    :', GV_FAIZ.
