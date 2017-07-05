@@ -15,7 +15,7 @@ CLASS lcl_kitap DEFINITION.
     METHODS :
       kitap_kayit IMPORTING iv_kitap_adi    TYPE string
                             iv_kitap_yazar  TYPE string
-                            iv_kitap_adedi  TYPE string,
+                            iv_kitap_adedi  TYPE i,
       kitap_listele,
       kitap_sil IMPORTING iv_kitap_adi TYPE string.
    PRIVATE SECTION.
