@@ -12,13 +12,11 @@ REPORT  ZEB_LOCAL_SINIF.
 CLASS lcl_kitap DEFINITION.
   PUBLIC SECTION.
 *Method tanımlamaları kitap_kayit,kitap_listele ve kitap_sil methodları vardır.
-    METHODS
+    METHODS :
       kitap_kayit IMPORTING iv_kitap_adi    TYPE string
                             iv_kitap_yazar  TYPE string
-                            iv_kitap_adedi  TYPE string.
-     METHODS
-      kitap_listele.
-     METHODS
+                            iv_kitap_adedi  TYPE string,
+      kitap_listele,
       kitap_sil IMPORTING iv_kitap_adi TYPE string.
    PRIVATE SECTION.
 *Bu kısımda standart internal tablo oluşturulmuştur.
@@ -72,6 +70,7 @@ class lcl_kitap IMPLEMENTATION.
 ENDCLASS.
 
 data lo_nesne_kitap TYPE REF TO lcl_kitap.
+*class objemizi oluşturalım.
 
 START-OF-SELECTION.
 
