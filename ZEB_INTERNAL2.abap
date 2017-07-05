@@ -28,13 +28,14 @@ define kayit.
   personel-AD       = &2.
   personel-SOYAD    = &3.
   personel-TEL      = &4.
-  append personel to personel_listesi.
+  insert personel into table personel_listesi.
   clear personel.
 end-of-definition.
 
+kayit  3 'alfa' 'yazilim' '07070707'.
 kayit  1 'adem' 'bilgin' '1313213'.
 kayit  2 'faruk' 'fazýl' '45151515'.
-kayit  3 'alfa' 'yazilim' '07070707'.
+
 
 WRITE :/ 'Sorted tablo yazdýralým' COLOR COL_GROUP.
 skip 1.
